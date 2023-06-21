@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netquo Services</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/8ddc578668.js"
+      crossorigin="anonymous"
+    ></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+    <nav class=" nav collapsible ">
+      <a class="nav__brand"  href="index.html" ><img src="../images/logo.webp" alt="logo"></a>
+      <span class="icon icon--black nav__toggler"><i class="fas fa-bars fa-2x"></i>  </span> 
+     
+         
+        <ul class="list nav__list nav__list--left  collapsible__content ">
+          <li  class="nav__item"><a target="_blank" href="/components/About__section.html" >About Us</a></li>
+          <li class="nav__item"><a target="_blank" href="/components/job__opportunity.html">Job Opportunities</a></li>
+          <li  class="nav__item"><a target="_blank" href="#">Careers</a></li>
+          <li class="nav__item"><a target="_blank" href="#">Hire Us</a></li>
+         
+        </ul>
+  
+        <ul class="list  nav__list  nav__list--right collapsible__content ">
+          <li class="nav__item"><a target="_blank" href="/components/block__forms.html">Sign In / Create Account</a></li>
+  
+          
+          <li class="nav__item bar"><a href="#"></a>|</li>
+          <li class="nav__item"><a target="_blank" href="#"><strong>Post a Job</strong></a>
+          </li>
+        </ul>
+  
+    </nav>
+   
+  
+<ul class="breadcrumb">
+  <li><a href="../index.html">Home</a></li>
+  
+  <li><a href="/components/block__forms.html"><i class="fas fa-user"></i></a></li>
+  <li>Log in / Sign up</li>
+</ul>
+
+<section class="block block-domain">
+
+    <div class= " block grid grid--1x2">
+     <div class="form-floating form-signin">
+       <h2 class="block__heading"> Sign in</h2>
+      
+       <button class="btn btn--secondary btn--outline" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+       <div id="id01" class="form">
+     
+       <div class="imgcontainer">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="images/woman.png" alt="Avatar" class="img-thumbnail">
+       </div>
+      
+       <form class=" form-signin" action="/action_page.php" method="POST">
+        
+           
+        
+          <div class="form-group">
+             <input
+           class="form-control"
+           type="text"
+           placeholder="Email address"
+           name="emailId"
+           minlength="5"
+           maxlength="255"
+           autofocus
+           required
+             />
+           </div>
+            <div class="form-group">
+             <input
+           class="form-control"
+           type="password"
+           placeholder="Password"
+           name="psw"
+           maxlength="255"
+           required
+            />
+             </div>
+           <div class="form-group">
+            <input type="checkbox" checked="checked" id="Remember-me" />
+            <label for="remember-me">Remember me</label>
+           </div>
+           <div class="container">
+           <button type="button" class="cancelbtn">Cancel</button>
+           <button type="submit" class="btn btn--primary btn--secondary btn--block">Sign in</button>
+           <span class="psw">Forgot <a href="#">password?</a></span>
+           <p class="muted">Copyright &copy; 2021</p>
+         </div>
+         </div>
+        </form>
+       </div>
+
+
+      <div class="container form-floating form-signup">
+       <h2 class="block__heading"> Create Account</h1>
+         <button class="btn btn--secondary btn--outline" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+         <div id="id02" class="form">
+           <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+       <form class="form-signup" action ="/action_page.php" method="POST">
+        
+     <div class="form-group">
+           <input
+         class="form-control"
+         type="text"
+         placeholder="First Name"
+         name="ufname"
+         minlength="5"
+         maxlength="255"
+         autofocus
+         required
+           />
+           <input
+         class="form-control"
+         type="text"
+         placeholder="Last Name"
+         name="ulname"
+         minlength="5"
+         maxlength="255"
+         autofocus
+         required
+           />
+         </div>
+   
+        
+         <div class="form-group">
+            <input
+          class="form-control"
+          type="text"
+          placeholder="Email address"
+          name="emailId"
+          minlength="5"
+          maxlength="255"
+          autofocus
+          required
+            />
+          </div>
+           <div class="form-group">
+            <input
+          class="form-control"
+          type="password"
+          placeholder="New Password"
+          name="psw"
+          maxlength="255"
+          required
+           />
+            </div>
+            <div class="form-group">
+             <input
+           class="form-control"
+           type="password"
+           placeholder="Repeat tPassword"
+           name="psw"
+           maxlength="255"
+           required
+            />
+             </div>
+          <div class="form-group">
+           <input type="checkbox" checked="checked" id="Remember-me" />
+           <label for="remember-me">Remember me</label>
+           <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          </div>
+          <div class="clearfix">
+           <button type="button"
+           onclick="document.getElementById('id02').style.display='none'"class="btn btn--accent cancelbtn">Cancel</button>
+          <button type="submit" class="btn btn--primary btn--secondary btn--block">Sign Up</button>
+         
+          <p class="muted">Copyright &copy; 2021</p>
+        </div>
+        </div>
+       </div>
+       </form>
+     </div>
+      </div>
+
+
+      
+
+     
+</section>
+
+
+  
+</body>
+</html>
